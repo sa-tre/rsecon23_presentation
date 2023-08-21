@@ -16,6 +16,16 @@
             .highlight {
                 color: #859900;
             }
+            .fragment.highlight-my-green {}
+            .fragment.highlight-my-green.visible {
+                color: #859900;
+            }
+            .fragment.blur {
+                filter: blur(5px);
+            }
+            .fragment.blur.visible {
+                filter: none;
+            }
         </style>
     </head>
     <body>
@@ -25,170 +35,176 @@
                     <h2>Standardising UK Trusted Research Environments in the Open</h2>
                 </section>
                 <section>
-                    <h3>The need for SATRE</h3>
-                    <section>
-                        <h4>The need for TREs</h4>
-                        <ul>
-                            <li>The outputs of research with sensitive data could be <span class="highlight">signficiant</span></li>
-                            <li><span class="highlight">Enabling</span> researchers to work with sensitive data</li>
-                            <li><span class="highlight">Enforcing</span> and <span class="highlight">encouraging</span> good security
-                            <li>Keeping the <span class="highlight">confidence</span> of data controllers, subjects and the public</li>
-                        </ul>
-                        <aside data-markdown class="notes">
-                            - Working with sensitive data is important/necessary, huge impact
-                                - Health data
-                                - Administrative data
-                                - Commercially sensitive data
-                                - All personal data
-                            - Research environment need to be productive and secure
-                            - Remove the burden from researchers on maintaining security
-                            - Particularly when data subjects are the public, we rely on their trust and consent
-                        </aside>
-                    </section>
-                    <section>
-                        <h4>The current TRE landscape</h4>
-                        <aside data-markdown class="notes">
-                            - Fragmented
-                                - Some commercial offerings
-                                - Many universities/institutions building/operating their own TREs
-                            - Variety of approaches
-                            - TREs may be fairly bespoke, focused on a particular use or domain
-                            - Some community groups to share expertise, coordinate, unify
-                        </aside>
-                    </section>
-                    <section>
-                        <h4>A standard architecture</h4>
-                        <aside data-markdown class="notes">
-                            - Enable comparison across TREs
-                            - Encourage all TREs to raise standards
-                            - Existing standards (ISO27001, CE+) do not make your infrastructure a TRE
-                        </aside>
-                    </section>
+                    <h2 class="fragment custom highlight-my-green">The need for SATRE</h2>
+                    <h2>Our Approach</h2>
+                    <h2>Lessons Learned</h2>
                 </section>
                 <section>
-                    <h3>Our Approach</h3>
-                    <section>
-                        <h4>Cross-institution collaboration</h4>
-                    </section>
-                    <section>
-                        <h4>Stakeholder focus</h4>
-                    </section>
-                    <section>
-                        <h4>Community cocreation</h4>
-                    </section>
-                    <section>
-                        <h4>Public engagement</h4>
-                    </section>
-                    <section>
-                        <h4>Working in the open</h4>
-                        <iframe src="https://satre-specification.readthedocs.io/en/latest/" height="450" width="800"></iframe>
-                    </section>
-                    <section>
-                        <h4>Sustainability</h4>
-                    </section>
+                    <h4>The need for TREs</h4>
+                    <ul>
+                        <li>The outputs of research with sensitive data could be <span class="highlight">signficiant</span></li>
+                        <li><span class="highlight">Enabling</span> researchers to work with sensitive data</li>
+                        <li><span class="highlight">Enforcing</span> and <span class="highlight">encouraging</span> good security
+                        <li>Keeping the <span class="highlight">confidence</span> of data controllers, subjects and the public</li>
+                    </ul>
+                    <aside data-markdown class="notes">
+                        - Working with sensitive data is important/necessary, huge impact
+                            - Health data
+                            - Administrative data
+                            - Commercially sensitive data
+                            - All personal data
+                        - Research environment need to be productive and secure
+                        - Remove the burden from researchers on maintaining security
+                        - Particularly when data subjects are the public, we rely on their trust and consent
+                    </aside>
                 </section>
                 <section>
-                    <h3>Lessons learned</h3>
-                    <section>
-                        <h4>The power of collaboration cafés</h4>
-                        <ul>
-                            <li>Collaboration cafés have been the <span class="highlight">best way</span> to get <span class="highlight">community input</span></li>
-                            <li>Breakout room discussions have led <span class="highlight">directly</span> to <span class="highlight">significant changes</span></li>
-                            <li>Running collaboration cafés requires <span class="highlight">preparation and planning</span></li>
-                            <li><span class="highlight">Facilitators</span> are necessary to make discussions productive</li>
-                            <li>Outputs need to be processed</li>
-                            <li>Promotion work pays off</li>
-                        </ul>
-                        <aside data-markdown class="notes">
-                            - Collaboration cafés have been the best way to get community input
-                            - Breakout room discussions have led directly to significant changes
-                              - Recognising the important of information governance
-                              - Switch from feature focus to capability focus
-                              - Modifying the specification
-                              - Adjusting project governance and routes to contribution
-                              - Changing evaluation process
-                            - You need to prepare in advance. A collaboration café should have an agenda and materials prepared
-                            - Facilitators keep discussion on topic, help ensure everyone has their say. Especially when many people attend
-                            - After a collaboration café the discussion needs to be summarised and translated into actions
-                            - We are proud of the number and diversity of people attending. Active promotion and engagement was very worth the investment
-                        </aside>
-                    </section>
-                    <section>
-                        <h4>The benefits of working in the open</h4>
-                        <ul>
-                            <li>People <span class="highlight">engage better</span> with an open project</li>
-                            <li><span class="highlight">Start</span> open, stay open</li>
-                            <li>Governance aids contributions, but you don't have to be <span class="highlight">perfect</span> from the outset</li>
-                            <li>Contributions can be recognised and incentivise getting involved</li>
-                        </ul>
-                        <iframe src="https://satre-specification.readthedocs.io/en/latest/contributing/contributors.html#contributors" height="200" width="1000"></iframe>
-                        <aside data-markdown class="notes">
-                            - An open project means
-                              - People can see and comment on your work in progress
-                              - There are clear routes to contribution
-                            - You should start open, from the first contribution
-                              - Good practice from the beginning
-                              - Clear distinction between public and private (e.g. survey)
-                              - Making a project open later is difficult
-                            - Contribution process, code of conduct _etc._ helps people to contribute
-                            - Codifying this takes time. It is OK to be good enough and change your processes when there is a need
-                        </aside>
-                    </section>
-                    <section>
-                        <!--
-                            Collecting Hari's points
-                              - collaboration is easier when there is a specific task
-                              - masking the most of limited time
-                              - strategic collaboration matters
-                            Plus acknowledgement of the important of roles
-                        -->
-                        <h4>Effective engagement takes effort</h4>
-                        <ul>
-                            <li>You need to provide <span class="highlight">scope and context</span> to potential collaborators</li>
-                            <li>You must make <span class="highlight">good use</span> of people's time</li>
-                            <li>The "project team" should engage with the collaboration process too</li>
-                            <li>Roles like PIE, community managers, RAMs have the <span class="highlight">skills and enthusiasm</span> to engage people</li>
-                        </ul>
-                        <aside data-markdown class="notes">
-                            - Our initial approach was "participant-driven", asking attendees what they wanted to talk about at events
-                                - It was difficult for us to keep focus and it was difficult for collaborators to know how they could help
-                                - Moved to preparing focused events, asking specific questions
-                                - More productive and clear when our approach is not aligned with the community
-                            - Time is limited, particularly when engaging with the public
-                                - They are not paid to help us, we must respect their time and not waste it
-                                - Focus on short and direct engagements with clear goals
-                                - Don't expect people to devote time or be engaged over long periods
-                            - Your "core team" should be active and visible at collaboration events
-                                - It is important to avoid an "us and them" perception
-                            - Roles focused on community and engagement have been critical
-                                - They bring expertise and a desire to do work RSEs (or other tech focused roles) lack
-                        </aside>
-                    </section>
-                    <section>
-                        <h4>Get feedback early</h4>
-                        <ul>
-                            <li>Initially wasted effort</li>
-                            <li><span class="highlight">Survey</span> was partially successful</li>
-                            <li>Take advantage of <span class="highlight">version control</span> and <span class="highlight">open working</span></li>
-                            <li>Changes are <span class="highlight">more frequent</span> but take <span class="highlight">less time</span></li>
-                        </ul>
-                        <aside data-markdown class="notes">
-                            - Wasted effort
-                              - Trying to produce complete items without feedback
-                              - Finding that what we had done was not right
-                            - For example the survey
-                              - Around two months to create, share, analyse, process results
-                              - We are proud, > 100 responses
-                              - Strong feedback that survey wasn't particularly helpful, asking wrong questions, wrong focus
-                            - Now we take advantage of version control and open working to get feedback earlier
-                              - Open discussion about ideas early
-                              - Propose changes and ask for feedback
-                              - Use collaboration cafés to show what we are working on and improve
-                              - More comfortable committing 'draft' items to development branch (releases remain)
-                            - Community feedback leads to many, sometimes large changes
-                            - Overall it saves effort as we do not invest in the wrong things
-                        </aside>
-                    </section>
+                    <h4>The current TRE landscape</h4>
+                    <aside data-markdown class="notes">
+                        - Fragmented
+                            - Some commercial offerings
+                            - Many universities/institutions building/operating their own TREs
+                        - Variety of approaches
+                        - TREs may be fairly bespoke, focused on a particular use or domain
+                        - Some community groups to share expertise, coordinate, unify
+                    </aside>
+                </section>
+                <section>
+                    <h4>A standard architecture</h4>
+                    <aside data-markdown class="notes">
+                        - Enable comparison across TREs
+                        - Encourage all TREs to raise standards
+                        - Existing standards (ISO27001, CE+) do not make your infrastructure a TRE
+                    </aside>
+                </section>
+                <section>
+                    <h2>The need for SATRE</h2>
+                    <h2 class="fragment custom highlight-my-green">Our Approach</h2>
+                    <h2>Lessons Learned</h2>
+                </section>
+                <section>
+                    <h4>Cross-institution collaboration</h4>
+                </section>
+                <section>
+                    <h4>Stakeholder focus</h4>
+                </section>
+                <section>
+                    <h4>Community cocreation</h4>
+                </section>
+                <section>
+                    <h4>Public engagement</h4>
+                </section>
+                <section>
+                    <h4>Working in the open</h4>
+                    <iframe src="https://satre-specification.readthedocs.io/en/latest/" height="450" width="800"></iframe>
+                </section>
+                <section>
+                    <h4>Sustainability</h4>
+                </section>
+                <section>
+                    <h2>The need for SATRE</h2>
+                    <h2>Our Approach</h2>
+                    <h2 class="fragment custom highlight-my-green">Lessons Learned</h2>
+                </section>
+                <section>
+                    <h4>The power of collaboration cafés</h4>
+                    <ul>
+                        <li>Collaboration cafés have been the <span class="highlight">best way</span> to get <span class="highlight">community input</span></li>
+                        <li>Breakout room discussions have led <span class="highlight">directly</span> to <span class="highlight">significant changes</span></li>
+                        <li>Running collaboration cafés requires <span class="highlight">preparation and planning</span></li>
+                        <li><span class="highlight">Facilitators</span> are necessary to make discussions productive</li>
+                        <li>Outputs need to be processed</li>
+                        <li>Promotion work pays off</li>
+                    </ul>
+                    <aside data-markdown class="notes">
+                        - Collaboration cafés have been the best way to get community input
+                        - Breakout room discussions have led directly to significant changes
+                          - Recognising the important of information governance
+                          - Switch from feature focus to capability focus
+                          - Modifying the specification
+                          - Adjusting project governance and routes to contribution
+                          - Changing evaluation process
+                        - You need to prepare in advance. A collaboration café should have an agenda and materials prepared
+                        - Facilitators keep discussion on topic, help ensure everyone has their say. Especially when many people attend
+                        - After a collaboration café the discussion needs to be summarised and translated into actions
+                        - We are proud of the number and diversity of people attending. Active promotion and engagement was very worth the investment
+                    </aside>
+                </section>
+                <section>
+                    <h4>The benefits of working in the open</h4>
+                    <ul>
+                        <li>People <span class="highlight">engage better</span> with an open project</li>
+                        <li><span class="highlight">Start</span> open, stay open</li>
+                        <li>Governance aids contributions, but you don't have to be <span class="highlight">perfect</span> from the outset</li>
+                        <li>Contributions can be recognised and incentivise getting involved</li>
+                    </ul>
+                    <iframe src="https://satre-specification.readthedocs.io/en/latest/contributing/contributors.html#contributors" height="200" width="1000"></iframe>
+                    <aside data-markdown class="notes">
+                        - An open project means
+                          - People can see and comment on your work in progress
+                          - There are clear routes to contribution
+                        - You should start open, from the first contribution
+                          - Good practice from the beginning
+                          - Clear distinction between public and private (e.g. survey)
+                          - Making a project open later is difficult
+                        - Contribution process, code of conduct _etc._ helps people to contribute
+                        - Codifying this takes time. It is OK to be good enough and change your processes when there is a need
+                    </aside>
+                </section>
+                <section>
+                    <!--
+                        Collecting Hari's points
+                          - collaboration is easier when there is a specific task
+                          - masking the most of limited time
+                          - strategic collaboration matters
+                        Plus acknowledgement of the important of roles
+                    -->
+                    <h4>Effective engagement takes effort</h4>
+                    <ul>
+                        <li>You need to provide <span class="highlight">scope and context</span> to potential collaborators</li>
+                        <li>You must make <span class="highlight">good use</span> of people's time</li>
+                        <li>The "project team" should engage with the collaboration process too</li>
+                        <li>Roles like PIE, community managers, RAMs have the <span class="highlight">skills and enthusiasm</span> to engage people</li>
+                    </ul>
+                    <aside data-markdown class="notes">
+                        - Our initial approach was "participant-driven", asking attendees what they wanted to talk about at events
+                            - It was difficult for us to keep focus and it was difficult for collaborators to know how they could help
+                            - Moved to preparing focused events, asking specific questions
+                            - More productive and clear when our approach is not aligned with the community
+                        - Time is limited, particularly when engaging with the public
+                            - They are not paid to help us, we must respect their time and not waste it
+                            - Focus on short and direct engagements with clear goals
+                            - Don't expect people to devote time or be engaged over long periods
+                        - Your "core team" should be active and visible at collaboration events
+                            - It is important to avoid an "us and them" perception
+                        - Roles focused on community and engagement have been critical
+                            - They bring expertise and a desire to do work RSEs (or other tech focused roles) lack
+                    </aside>
+                </section>
+                <section>
+                    <h4>Get feedback early</h4>
+                    <ul>
+                        <li>Initially wasted effort</li>
+                        <li><span class="highlight">Survey</span> was partially successful</li>
+                        <li>Take advantage of <span class="highlight">version control</span> and <span class="highlight">open working</span></li>
+                        <li>Changes are <span class="highlight">more frequent</span> but take <span class="highlight">less time</span></li>
+                    </ul>
+                    <aside data-markdown class="notes">
+                        - Wasted effort
+                          - Trying to produce complete items without feedback
+                          - Finding that what we had done was not right
+                        - For example the survey
+                          - Around two months to create, share, analyse, process results
+                          - We are proud, > 100 responses
+                          - Strong feedback that survey wasn't particularly helpful, asking wrong questions, wrong focus
+                        - Now we take advantage of version control and open working to get feedback earlier
+                          - Open discussion about ideas early
+                          - Propose changes and ask for feedback
+                          - Use collaboration cafés to show what we are working on and improve
+                          - More comfortable committing 'draft' items to development branch (releases remain)
+                        - Community feedback leads to many, sometimes large changes
+                        - Overall it saves effort as we do not invest in the wrong things
+                    </aside>
                 </section>
                 <section>
                     <h3>Acknowledgements</h3>
