@@ -26,6 +26,14 @@
             .fragment.blur.visible {
                 filter: none;
             }
+            div.columns{
+                display: flex;
+                gap: min(4vw, 1.5em);
+            }
+            div.column{
+                flex: auto;
+                overflow-x: auto;
+            }
         </style>
     </head>
     <body>
@@ -277,14 +285,23 @@
                     </aside>
                 </section>
                 <section>
-                    <h4>Sustainability</h4>
-                </section>
-                <section>
                     <h4>Leading by example</h4>
                     <!--
                         - How we are using the spec
                         - Demonstrating good participation
                     -->
+                    <div class="columns">
+                        <div class="column" style="width: 40%">
+                            <ul>
+                                <li>Follow <span class="highlight">our own</span> rules</li>
+                                <li><span class="highlight">Evaluating</span> our implementations</li>
+                                <li>Commitment to bridge the gap</li>
+                            </ul>
+                        </div>
+                        <div class="column" style="width: 60%">
+                            <iframe src="https://satre-specification.readthedocs.io/en/latest/evaluations/alan_turing_institute.html" height="400" width="600"></iframe>
+                        </div>
+                    </div>
                     <aside data-markdown class="notes">
                         - We follow the governance and contribution guidelines (maybe not the real point of this slide)
                         - Dundee and Turing are completing self evaluations
@@ -293,6 +310,9 @@
                             - Being honest about our strengths and weaknesses
                         - Commitment to reduce the gap between our TREs and the standard
                     </aside>
+                </section>
+                <section>
+                    <h4>Sustainability</h4>
                 </section>
                 <section>
                     <h2>The need for SATRE</h2>
